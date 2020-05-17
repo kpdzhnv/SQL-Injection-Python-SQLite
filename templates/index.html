@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Injection</title>
+</head>
+<body>
+    <h1>It works!</h1>
+
+    <div class="container" >
+        <h3>Enter name and Password</h3>
+        <form method="POST">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="show secret">
+            <input type="text" disabled="disabled" value="{{secret}}">
+        </form>
+    </div>
+
+</body>
+</html>
